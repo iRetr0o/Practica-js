@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_code/normalize.css">
+    <link rel="stylesheet" href="../css_code/pokedex.css">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <script src="../js_code/pokedex.js" defer></script>
+    <title>Pokedex online</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h2>Pokedex Online</h2>
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a href="./index.html">Inicio</a></li>
+                    <li class="nav__li"><a href="./funcion.html">¿Cómo funciona?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="pokedex">
+            <div class="azul"></div>
+            <div class="pokebotones">
+                <div class="rojo"></div>
+                <div class="amarillo"></div>
+                <div class="verde"></div>
+            </div>
+        </section>
+        <main class="main">
+            <form class="pokeinput">
+                <label for="pokeId">Busca a tu Pokémon</label>
+                <input type="search" name="PokeName" id="pokeId" placeholder="Pikachu">
+            </form>
+            <div class="pokeball" id="data-poke-card">
+                <img src="../imagenes/pokeball.png" alt="Pokemon" id="pokeImg">
+            </div>
+            <div class="poke-boton">
+                <button class="boton" onclick="fetchPokemon()">Cambiar pokémon</button>
+            </div>
+        </main>
+        <aside class="aside">
+            <div class="forma"></div>
+            <div class="poke-card">
+                <h2 id="data-poke-name">Info</h2>
+                <h3 id="data-poke-num"></h3>
+                <h3 id="data-poke-moves"></h3>
+                <h4 class="poke-types" id="data-poke-types"></h4>
+                <h4 class="poke-stats" id="data-poke-stats"></h4>
+                <h4 id="data-poke-moves"></h4>
+            </div>
+        </aside>
+        <footer class="footer">
+            <h3 class="footer__h3">Sobre esta pagina</h3>
+            <p class="footer__p">Este sitio fue diseñado como una practica pero puedes consultar el API del creador en el siguiente <a href="https://pokeapi.co/" target="blank">link</a></p>
+        </footer>
+    </div>
+</body>
+</html>
