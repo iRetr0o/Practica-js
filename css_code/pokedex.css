@@ -170,8 +170,7 @@
     font-family: 'DotGothic16', sans-serif;
 }
 .poke-types div {
-    padding: 5px;
-    margin: 5px;
+    padding: 4px;
     border-radius: 4px;
     background-color: #353;
     border: 1px dashed #000;
